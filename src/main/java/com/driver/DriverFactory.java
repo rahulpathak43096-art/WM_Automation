@@ -38,7 +38,7 @@ public class DriverFactory {
         	break;
         	
         case "edge":
-        	System.setProperty("webdriver.edge.driver", "C:\\SeleniumFramework\\EdgeDriver\\msedgedriver.exe");
+        	System.setProperty("webdriver.edge.driver", "C:\\WM\\SeleniumFrameworkWM\\EdgeDriver\\msedgedriver.exe");
         	driver.set(new EdgeDriver());
         	break;
         	

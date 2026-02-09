@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="2" parallel="tests" name="EdgeLoginTest(failed)" verbose="0">
-    <classes>
-      <class name="com.tests.LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifyLoginAndTextFromExcel"/>
-        </methods>
-      </class> <!-- com.tests.LoginTest -->
-    </classes>
-  </test> <!-- EdgeLoginTest(failed) -->
-  <test thread-count="2" parallel="tests" name="ChromeLoginTest(failed)" verbose="0">
+<suite name="Failed suite [Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="ChromeLoginTest(failed)" verbose="0">
     <classes>
       <class name="com.tests.LoginTest">
         <methods>
