@@ -10,34 +10,53 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
-    // Creates and return WebDriver
-    public static WebDriver initDriver(String browser) {
-    	WebDriver driver;
+    // Creates ThreadLocal for parallel execution
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	
+	//private constructor -> Singleton
+	
+	private DriverFactory() {}
+	
+	//Initialize driver
+ 
+    public static void initDriver(String browser) {
+    	
+    	
     	if(browser == null) {
-    		throw new RuntimeException("Browser value is NULL. Check config.properties");
+    		throw new RuntimeException("Browser value is NULL. Pass from mvn or config.");
     	}
         switch (browser.toLowerCase()) {
         
         case "chrome":
         	WebDriverManager.chromedriver().setup();
-        	driver = new ChromeDriver();
+        	driver.set(new ChromeDriver());
         	break;
         
         case "firefox":
         	WebDriverManager.firefoxdriver().setup();
-        	driver = new FirefoxDriver();
+        	driver.set(new FirefoxDriver());
         	break;
         	
         case "edge":
         	System.setProperty("webdriver.edge.driver", "C:\\SeleniumFramework\\EdgeDriver\\msedgedriver.exe");
-        	driver = new EdgeDriver();
+        	driver.set(new EdgeDriver());
         	break;
         	
         default:
-        	throw new RuntimeException("Invalid browser name in config.properties: " + browser);
+        	throw new RuntimeException("Invalid browser " + browser);
         	      	
         }
-        driver.manage().window().maximize();
-        return driver;
+        getDriver().manage().window().maximize();
+    }
+        //Get driver instance
+        public static WebDriver getDriver() {
+        	return driver.get();
+        }
+        //Quit driver
+        public static void quitDriver() {
+        	if(driver.get()!=null) {
+        		driver.get().quit();
+        		driver.remove();
+        	}
     }
 }

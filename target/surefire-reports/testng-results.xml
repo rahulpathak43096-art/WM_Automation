@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-05T09:17:18 IST" name="Automation Suite" finished-at="2026-02-05T09:17:28 IST" duration-ms="9612">
+  <suite started-at="2026-02-09T10:58:23 IST" name="Automation Suite" finished-at="2026-02-09T10:58:33 IST" duration-ms="9695">
     <groups>
     </groups>
-    <test started-at="2026-02-05T09:17:18 IST" name="Login Automation Test" finished-at="2026-02-05T09:17:28 IST" duration-ms="9612">
+    <test started-at="2026-02-09T10:58:23 IST" name="ChromeLoginTest" finished-at="2026-02-09T10:58:33 IST" duration-ms="9695">
       <class name="com.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginTest@2f7298b]" started-at="2026-02-05T09:17:18 IST" name="setup" finished-at="2026-02-05T09:17:25 IST" duration-ms="6712" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginTest@1fa268de]" started-at="2026-02-09T10:58:23 IST" name="setup" finished-at="2026-02-09T10:58:30 IST" duration-ms="7216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginAndTextFromExcel()[pri:0, instance:com.tests.LoginTest@2f7298b]" started-at="2026-02-05T09:17:25 IST" name="verifyLoginAndTextFromExcel" finished-at="2026-02-05T09:17:27 IST" duration-ms="2577" status="PASS">
+        <test-method signature="verifyLoginAndTextFromExcel()[pri:0, instance:com.tests.LoginTest@1fa268de]" started-at="2026-02-09T10:58:30 IST" name="verifyLoginAndTextFromExcel" finished-at="2026-02-09T10:58:32 IST" duration-ms="2238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAndTextFromExcel -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2f7298b]" started-at="2026-02-05T09:17:27 IST" name="tearDown" finished-at="2026-02-05T09:17:28 IST" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@1fa268de]" started-at="2026-02-09T10:58:32 IST" name="tearDown" finished-at="2026-02-09T10:58:33 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.LoginTest -->
-    </test> <!-- Login Automation Test -->
+    </test> <!-- ChromeLoginTest -->
   </suite> <!-- Automation Suite -->
 </testng-results>

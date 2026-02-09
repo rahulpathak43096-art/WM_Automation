@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
+import com.driver.DriverFactory;
 import com.utils.WrapperMethods;
 
 public class LoginPage {
@@ -22,10 +23,10 @@ public class LoginPage {
     @FindBy(css = "button[type='submit']")
     WebElement loginBtn;
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
+    public LoginPage() {
+        this.driver = DriverFactory.getDriver();
         PageFactory.initElements(driver, this);
-        wrapper = new WrapperMethods(driver);
+        wrapper = new WrapperMethods();
     }
 
 

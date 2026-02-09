@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.driver.DriverFactory;
 import com.utils.WrapperMethods;
 
 public class SecurePage {
@@ -14,10 +15,10 @@ public class SecurePage {
     @FindBy(id = "flash")
     WebElement successMessage;
 
-    public SecurePage(WebDriver driver) {
-        this.driver = driver;
+    public SecurePage() {
+        this.driver = DriverFactory.getDriver();
         PageFactory.initElements(driver, this);
-        wrapper = new WrapperMethods(driver);
+        wrapper = new WrapperMethods();
     }
 
     // Returns login success message

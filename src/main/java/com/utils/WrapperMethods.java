@@ -6,13 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.driver.DriverFactory;
+
 public class WrapperMethods {
 
     WebDriver driver;
     WebDriverWait wait;
 
-    public WrapperMethods(WebDriver driver) {
-        this.driver = driver;
+    public WrapperMethods() {
+        this.driver = DriverFactory.getDriver();
         this.wait= new WebDriverWait(driver,Duration.ofSeconds(10));
     }
 

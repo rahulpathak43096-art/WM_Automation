@@ -17,8 +17,8 @@ public class LoginTest extends BaseTest {
     @Test
     public void verifyLoginAndTextFromExcel() {
 
-        LoginPage loginPage = new LoginPage(driver);
-        SecurePage securePage = new SecurePage(driver);
+        LoginPage loginPage = new LoginPage();
+        SecurePage securePage = new SecurePage();
 
         // Login to application
         loginPage.login(

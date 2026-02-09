@@ -2,10 +2,12 @@
 
 <suite name="Automation Suite">
 
-    <test name="Login Automation Test">
+    
+    <test name="ChromeLoginTest">
         <classes>
             <class name="com.tests.LoginTest"/>
         </classes>
     </test>
+    
 
 </suite>

@@ -6,7 +6,31 @@
     <version>1.0</version>
 
     <dependencies>
+    
+        <!--Log4j2-core-->
+        <dependency>
+              <groupId>org.apache.logging.log4j</groupId>
+              <artifactId>log4j-core</artifactId>
+              <version>2.25.3</version>
+              <scope>compile</scope>
+        </dependency>
         
+        <!--log4j2-api-->
+       <dependency>
+             <groupId>org.apache.logging.log4j</groupId>
+             <artifactId>log4j-api</artifactId>
+              <version>2.25.3</version>
+              <scope>compile</scope>
+       </dependency>
+       
+       <!--slf4j-->
+       <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.17</version>
+            <scope>test</scope>
+       </dependency>
+           
         <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -46,6 +70,8 @@
     <version>3.5.3</version>
     <configuration>
     <suiteXmlFiles>testng.xml</suiteXmlFiles>
+    <!--Pass system properties-->
+    <systemPropertyyVariables><browser>${browser}</browser></systemPropertyyVariables>
     </configuration>
     </plugin>
       </plugins>
