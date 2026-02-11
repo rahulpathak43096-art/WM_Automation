@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.driver.DriverFactory;
+import com.utils.ScreenshotUtils;
 import com.utils.WrapperMethods;
 
 public class SecurePage {
@@ -23,6 +24,8 @@ public class SecurePage {
 
     // Returns login success message
     public String getSuccessMessage() {
+    	
+    	ScreenshotUtils.captureScreenshot("SecurePage");
 
         String fullText = wrapper.getText(successMessage);
 
