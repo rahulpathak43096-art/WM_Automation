@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
 import com.driver.DriverFactory;
+import com.utils.ScreenshotUtils;
 import com.utils.WrapperMethods;
 
 public class LoginPage {
@@ -35,5 +36,7 @@ public class LoginPage {
         wrapper.type(username, user);
         wrapper.type(password, pass);
         wrapper.click(loginBtn);
+        
+        ScreenshotUtils.captureScreenshot("LoginPage");
     }
 }
