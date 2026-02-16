@@ -2,7 +2,10 @@
 
 <suite name="Automation Suite">
 
-    
+    <listeners>
+     <listener
+      class-name="com.listeners.TestListener"/>
+    </listeners>
     <test name="ChromeLoginTest">
         <classes>
             <class name="com.tests.LoginTest"/>

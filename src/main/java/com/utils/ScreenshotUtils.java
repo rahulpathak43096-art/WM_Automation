@@ -15,11 +15,11 @@ import com.driver.DriverFactory;
 public class ScreenshotUtils {
 	public static String captureScreenshot(String screenshotName) {
 		WebDriver driver = DriverFactory.getDriver();
-		
+		//TimeStamp Creation For giving Unique Naming.
 		String timeStamp = new SimpleDateFormat("yyyMMdd_HHmmss").format(new Date());
-		
+		//Go-To Project Root
 		String path = System.getProperty("user.dir")+"/screenshots/"+screenshotName + "_"+timeStamp + ".png";
-		
+		//Taking Screenshot
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		
 		File dest = new File(path);

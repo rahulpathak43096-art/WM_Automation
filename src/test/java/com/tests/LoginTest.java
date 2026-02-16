@@ -1,5 +1,6 @@
 package com.tests;
 
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 
@@ -10,12 +11,17 @@ import com.base.BaseTest;
 import com.pages.LoginPage;
 import com.pages.SecurePage;
 import com.utils.ExcelUtils;
+import com.utils.LoggerUtils;
 import com.utils.PropertyUtils;
 
 public class LoginTest extends BaseTest {
 
     @Test
     public void verifyLoginAndTextFromExcel() {
+    	
+    	Logger log = LoggerUtils.getLogger(LoginTest.class);
+    	
+    	log.info("Starting Login Test");
 
         LoginPage loginPage = new LoginPage();
         SecurePage securePage = new SecurePage();
@@ -25,6 +31,8 @@ public class LoginTest extends BaseTest {
                 PropertyUtils.getProperty("username"),
                 PropertyUtils.getProperty("password")
         );
+        
+        log.info("Validating success message");
 
         // Get actual text from UI
         String actualText = securePage.getSuccessMessage();

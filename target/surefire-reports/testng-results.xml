@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-11T10:10:11 IST" name="Automation Suite" finished-at="2026-02-11T10:10:21 IST" duration-ms="10229">
+  <suite started-at="2026-02-15T23:30:30 IST" name="Automation Suite" finished-at="2026-02-15T23:30:48 IST" duration-ms="18524">
     <groups>
     </groups>
-    <test started-at="2026-02-11T10:10:11 IST" name="ChromeLoginTest" finished-at="2026-02-11T10:10:21 IST" duration-ms="10229">
+    <test started-at="2026-02-15T23:30:30 IST" name="ChromeLoginTest" finished-at="2026-02-15T23:30:48 IST" duration-ms="18524">
       <class name="com.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginTest@1fa268de]" started-at="2026-02-11T10:10:11 IST" name="setup" finished-at="2026-02-11T10:10:18 IST" duration-ms="7318" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginTest@8c3619e]" started-at="2026-02-15T23:30:30 IST" name="setup" finished-at="2026-02-15T23:30:40 IST" duration-ms="9943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginAndTextFromExcel()[pri:0, instance:com.tests.LoginTest@1fa268de]" started-at="2026-02-11T10:10:18 IST" name="verifyLoginAndTextFromExcel" finished-at="2026-02-11T10:10:21 IST" duration-ms="2665" status="PASS">
+        <test-method signature="verifyLoginAndTextFromExcel()[pri:0, instance:com.tests.LoginTest@8c3619e]" started-at="2026-02-15T23:30:40 IST" name="verifyLoginAndTextFromExcel" finished-at="2026-02-15T23:30:45 IST" duration-ms="5475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAndTextFromExcel -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@1fa268de]" started-at="2026-02-11T10:10:21 IST" name="tearDown" finished-at="2026-02-11T10:10:21 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@8c3619e]" started-at="2026-02-15T23:30:45 IST" name="tearDown" finished-at="2026-02-15T23:30:48 IST" duration-ms="2722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.LoginTest -->
     </test> <!-- ChromeLoginTest -->
+    <test started-at="2026-02-15T23:30:30 IST" name="edgeLoginTest" finished-at="2026-02-15T23:30:48 IST" duration-ms="18410">
+      <class name="com.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginTest@74f5ce22]" started-at="2026-02-15T23:30:30 IST" name="setup" finished-at="2026-02-15T23:30:39 IST" duration-ms="9504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginAndTextFromExcel()[pri:0, instance:com.tests.LoginTest@74f5ce22]" started-at="2026-02-15T23:30:39 IST" name="verifyLoginAndTextFromExcel" finished-at="2026-02-15T23:30:45 IST" duration-ms="5912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginAndTextFromExcel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@74f5ce22]" started-at="2026-02-15T23:30:45 IST" name="tearDown" finished-at="2026-02-15T23:30:48 IST" duration-ms="2604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.LoginTest -->
+    </test> <!-- edgeLoginTest -->
   </suite> <!-- Automation Suite -->
 </testng-results>

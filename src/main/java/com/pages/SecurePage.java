@@ -24,7 +24,7 @@ public class SecurePage {
 
     // Returns login success message
     public String getSuccessMessage() {
-    	
+    	//Capture screenshot on secure page
     	ScreenshotUtils.captureScreenshot("SecurePage");
 
         String fullText = wrapper.getText(successMessage);
