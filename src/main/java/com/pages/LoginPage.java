@@ -33,10 +33,12 @@ public class LoginPage {
 
     // Performs login operation
     public void login(String user, String pass) {
+        //capture Screenshot after login click
+        ScreenshotUtils.captureScreenshot("LoginPage");
+        
         wrapper.type(username, user);
         wrapper.type(password, pass);
         wrapper.click(loginBtn);
-        
-        ScreenshotUtils.captureScreenshot("LoginPage");
+
     }
 }
